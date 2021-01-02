@@ -23,6 +23,7 @@ public:
 
     // Read a fixed number of bytes from the server - blocking.
     // Returns false in case the connection is closed before bytesToRead bytes can be read.
+    bool getBytes(int bytes[], unsigned int bytesToRead);
     bool getBytes(char bytes[], unsigned int bytesToRead);
 
     // Send a fixed number of bytes from the client - blocking.
