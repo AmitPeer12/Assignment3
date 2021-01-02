@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Assignment3.dir/src/inputReader.cpp.o CMakeFiles/Assignment3.dir/src/BGRSclient.cpp.o CMakeFiles/Assignment3.dir/src/outputReader.cpp.o CMakeFiles/Assignment3.dir/src/echoClient.cpp.o CMakeFiles/Assignment3.dir/src/connectionHandler.cpp.o  -o Assignment3 
