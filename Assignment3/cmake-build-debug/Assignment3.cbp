@@ -86,9 +86,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/spl211/CLionProjects/Assignment3/include/BGRSclient.h">
-			<Option target="Assignment3"/>
-		</Unit>
 		<Unit filename="/home/spl211/CLionProjects/Assignment3/include/connectionHandler.h">
 			<Option target="Assignment3"/>
 		</Unit>

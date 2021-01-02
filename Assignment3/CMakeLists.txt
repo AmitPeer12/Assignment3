@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD 11)
 include_directories(include)
 
 add_executable(Assignment3
-        include/BGRSclient.h
         include/connectionHandler.h
         include/outputReader.h
         include/inputReader.h

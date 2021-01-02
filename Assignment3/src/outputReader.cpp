@@ -2,9 +2,13 @@
 #include "../include/connectionHandler.h"
 
 
- bool outputReader::shouldTerminate() {
+outputReader::outputReader() {
+    terminate = false;
+}
+static bool outputReader::shouldTerminate() {
     return terminate;
 }
+
 void outputReader::run(std::string host, int port) {
     ConnectionHandler connectionHandler(host, port);
     if (!connectionHandler.connect()) {

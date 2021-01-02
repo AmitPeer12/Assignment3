@@ -5,6 +5,9 @@
 #include <iostream>
 #include <cassert>
 #include <string>
+#include <vector>
+#include <stdlib.h>
+#include "../include/connectionHandler.h"
 using std::string;
 
 class inputReader {
@@ -12,15 +15,17 @@ class inputReader {
 
 public:
     inputReader();
-    char[] run(std::string input);
+    void run(string input,ConnectionHandler& connectionHandler);
+
 
 private:
-    static void insert_integer_to_char_array(char &arr[], int num, int &offset);
-    static void insert_string_to_char_array(char &arr[], string str, int &offset);
-    char[] type1(int opcode, string user, string pass);
-    char[] type2(int opcode, int courseNumber);
-    char[] type3(int opcode, string user);
-    char[] type4(int opcode);
+    static void insert_integer_to_char_array(char *arr, int num, int &offset);
+    static void insert_string_to_char_array(char *arr, string str, int &offset);
+    void type1(int opcode,string& input,ConnectionHandler &connectionHandler);
+    void type2(int opcode,string& input,ConnectionHandler &connectionHandler);
+    void type3(int opcode,string& input,ConnectionHandler &connectionHandler);
+    void type4(int opcode,ConnectionHandler &connectionHandler);
+    std::string split(string&);
 };
 
 #endif //ASSIGNMENT3_INPUTREADER_H
